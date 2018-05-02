@@ -22,12 +22,14 @@ public class Controller {
     {
         this.saleHandler = new SaleHandler(this.registryCreator);
     }
-    public SaleDTO enterItem(int itemID, int quantity)
+    public SaleDTO enterItem(int itemID)
     {
-       return saleHandler.addItem(itemID, quantity);
+       return saleHandler.addItem(itemID);
     }
     public double finishSale(double paymentAmount)
     {
-
+        printer.printReceipt(saleHandler.createReceipt());
+        exernalComController.sendSaleInformation(saleHandler.getSaleDTO());
+        return saleHandler.calculateChange(paymentAmount);
     }
 }
