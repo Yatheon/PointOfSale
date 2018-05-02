@@ -20,11 +20,11 @@ public class Controller {
     }
     public void startSale()
     {
-        this.saleHandler = new SaleHandler();
+        this.saleHandler = new SaleHandler(this.registryCreator);
     }
     public SaleDTO enterItem(int itemID, int quantity)
     {
-       return addItem(itemID, quantity);
+       return saleHandler.addItem(itemID, quantity);
     }
     public double finishSale(double paymentAmount)
     {
