@@ -34,8 +34,7 @@ public class SaleHandler {
     }
 
     public Receipt createReceipt() {
-        Receipt receipt = new Receipt(this.saleDTO);
-        return receipt;
+        return new Receipt(this.saleDTO);
     }
 
     /*Private Methods*/

@@ -1,7 +1,7 @@
 package Integration;
 
 public class ItemRegistry {
-    ItemDTO[] item;
+    private ItemDTO[] item;
     public ItemRegistry()
     {
         this.item = new ItemDTO[10];

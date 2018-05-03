@@ -1,39 +1,58 @@
 package Model;
 
+import Integration.ItemDTO;
+import Integration.ItemRegistry;
 import Integration.RegistryCreator;
+import Integration.SaleDTO;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class SaleHandlerTest extends Object {
+    private RegistryCreator registryCreator;
+    private SaleHandler saleHandler;
+    private ItemRegistry itemRegistry;
     @BeforeEach
     void setUp() {
+        registryCreator = new RegistryCreator();
+        saleHandler = new SaleHandler(registryCreator);
+        itemRegistry = new ItemRegistry();
     }
 
     @AfterEach
     void tearDown() {
+        registryCreator = null;
+        saleHandler = null;
+        itemRegistry = null;
     }
 
     @Test
-    void addItemToSale() {
+    void testAddItemToSale() {
+        int testVariable = 2;
+        double expResult = 10;
+        SaleDTO saleDTO = saleHandler.addItemToSale(testVariable);
+        double result = saleDTO.getTotalCost();
+        assertEquals(expResult,result);
+
     }
 
     @Test
-    void calculateChange() {
-        RegistryCreator registryCreator = new RegistryCreator();
-        SaleHandler saleHandler = new SaleHandler(registryCreator);
-
+    void testCalculateChangeEmptyList() {
+        int testVariable = 10;
+        double expResult = 10;
+        double result = saleHandler.calculateChange(testVariable);
+        assertEquals(expResult,result);
     }
-
     @Test
-    void getSaleDTO() {
-    }
-
-    @Test
-    void createReceipt() {
+    void testCalculateChangeOneItemList() {
+        int itemID = 2;
+        int testVariable = 10;
+        saleHandler.addItemToSale(itemID);
+        double expResult = 0;
+        double result = saleHandler.calculateChange(testVariable);
+        assertEquals(expResult,result);
     }
 
 }
