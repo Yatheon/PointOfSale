@@ -16,7 +16,6 @@ public class View {
         controller.startSale();
         saleDTO = controller.enterItem(3);
         saleDTO = controller.enterItem(2);
-        System.out.println("Total Cost: "+saleDTO.getTotalCost());
         change = controller.finishSale(53);
         System.out.println("Change: "+change);
         System.out.println("Hello, World");

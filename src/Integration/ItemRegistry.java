@@ -14,7 +14,7 @@ public class ItemRegistry {
         this.item[6] = new ItemDTO("mjölk", 10,3);
         this.item[7] = new ItemDTO("ost", 70,25);
         this.item[8] = new ItemDTO("kebab", 60,20);
-        this.item[9] = new ItemDTO("kol", 1000,550);
+        this.item[9] = new ItemDTO("kol", 1000,1100);
     }
 
     public ItemDTO getItem(int itemID) {
