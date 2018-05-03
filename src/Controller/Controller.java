@@ -24,7 +24,7 @@ public class Controller {
     }
     public SaleDTO enterItem(int itemID)
     {
-       return saleHandler.addItem(itemID);
+       return saleHandler.addItemToSale(itemID);
     }
     public double finishSale(double paymentAmount)
     {
