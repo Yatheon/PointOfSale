@@ -2,14 +2,21 @@ package Model;
 import Integration.ItemDTO;
 import Integration.SaleDTO;
 public class Receipt {
-    
+    private String[] receipt;
     Receipt(SaleDTO saleDTO){
         ItemDTO[] itemDTO = saleDTO.getItemDTO();
-        for(int i = 0; i< itemDTO.length; i++)
+        this.receipt = new String[itemDTO.length+3];
+        int i = 0;
+        for(; i< itemDTO.length; i++)
         {
-            System.out.println(itemDTO[i].getTotalPrice() +"  "+ itemDTO[i].getName() );
-            System.out.println("Total Cost: "+saleDTO.getTotalCost());
+            this.receipt[i] = itemDTO[i].getTotalPrice()+"  "+ itemDTO[i].getName();
         }
+        this.receipt[i++] = "Total Cost: "+saleDTO.getTotalCost();
+        this.receipt[i++] = "Tax: "+saleDTO.getTax();
+        this.receipt[i++] = "Have a nice day mr. customer, plz come back we need you!";
+    }
 
+    public String[] getReceipt() {
+        return receipt;
     }
 }

@@ -4,10 +4,12 @@ public class ItemDTO {
     private String name;
     private double totalPrice;
     private double tax;
-    public ItemDTO(String name, double totalPrice, double tax) {
+    private int id;
+    public ItemDTO(String name, double totalPrice, double tax, int id) {
         this.name = name;
         this.totalPrice = totalPrice;
         this.tax = tax;
+        this.id = id;
     }
 
     public double getTotalPrice() {
@@ -20,5 +22,9 @@ public class ItemDTO {
 
     public double getTax() {
         return tax;
+    }
+
+    public int getId() {
+        return id;
     }
 }
