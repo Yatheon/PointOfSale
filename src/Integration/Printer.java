@@ -2,6 +2,9 @@ package Integration;
 
 import Model.Receipt;
 
+/**
+ * Prints out the receipt of a finished sale
+ */
 public class Printer {
     public Printer(){}
     public void printReceipt(Receipt receipt){

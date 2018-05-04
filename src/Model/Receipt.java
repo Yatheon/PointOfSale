@@ -3,6 +3,13 @@ import Integration.ItemDTO;
 import Integration.SaleDTO;
 public class Receipt {
     private String[] receipt;
+
+    /**
+     *
+     * Creates the receipt object that contains a String with information that the printer can print out.
+     *
+     * @param saleDTO The information of the sale
+     */
     Receipt(SaleDTO saleDTO){
         ItemDTO[] itemDTO = saleDTO.getItemDTO();
         this.receipt = new String[itemDTO.length+3];

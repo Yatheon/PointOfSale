@@ -1,5 +1,8 @@
 package Integration;
 
+/**
+ * Creates registries
+ */
 public class RegistryCreator {
     private ItemRegistry itemRegistry;
 

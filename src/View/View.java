@@ -7,6 +7,7 @@ public class View {
     Controller controller;
     SaleDTO saleDTO;
     double change;
+
     public View(Controller controller){
         this.controller = controller;
     }

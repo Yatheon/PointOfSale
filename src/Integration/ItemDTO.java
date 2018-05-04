@@ -1,5 +1,9 @@
 package Integration;
 
+
+/**
+ * A DTO that contains information about a specific item
+ */
 public class ItemDTO {
     private String name;
     private double totalPrice;

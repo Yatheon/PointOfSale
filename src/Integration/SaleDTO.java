@@ -2,6 +2,9 @@ package Integration;
 
 import java.util.ArrayList;
 
+/**
+ * Contains all the information about the current sale
+ */
 public class SaleDTO {
     private ItemDTO[] itemDTO;
     private double totalCost;

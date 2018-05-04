@@ -1,5 +1,8 @@
 package Integration;
 
+/**
+ * Contains all the different items that are available
+ */
 public class ItemRegistry {
     private ItemDTO[] item;
     public ItemRegistry()
@@ -17,6 +20,12 @@ public class ItemRegistry {
         this.item[9] = new ItemDTO("kol", 1000,1100,9);
     }
 
+    /**
+     * Identifies the item that is requested and returns it
+     *
+     * @param itemID the ID of the item that is requested
+     * @return the requested item
+     */
     public ItemDTO getItem(int itemID) {
         for(int i = 0; i < this.item.length; i++){
             if(this.item[i].getId() == itemID )
