@@ -35,14 +35,28 @@ public class SaleHandler {
         return this.saleDTO;
     }
 
+    /**
+     * Calculate change based on payment amount and running total
+     *
+     * @param paymentAmount amount entered into the system at end of sale
+     * @return change calculated from payment amount and running total
+     */
     public double calculateChange(double paymentAmount) {
         return (paymentAmount - this.totalCost);
     }
-
+    /**
+     * Get method for Salehandler to retrieve stored SaleDTO
+     *
+     * @return Salehandler obejct own SaleDTO
+     */
     public SaleDTO getSaleDTO() {
         return saleDTO;
     }
-
+    /**
+     * Create receipt from Salehandlers stored SaleDTO
+     *
+     * @return receipt object
+     */
     public Receipt createReceipt() {
         return new Receipt(this.saleDTO);
     }
