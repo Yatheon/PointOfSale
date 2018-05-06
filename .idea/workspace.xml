@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f9ff7b1-f43d-43d7-bb47-7c32ce0c5773" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Integration/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Integration/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Receipt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/SaleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/SaleHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,7 +25,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ItemRegistry.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ItemRegistry.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="420">
@@ -103,11 +101,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SaleHandler.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="SaleHandler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+                <state relative-caret-position="491">
+                  <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
@@ -115,8 +113,6 @@
                     <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
                     <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
                     <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
-                    <element signature="e#2036#2037#0" expanded="true" />
-                    <element signature="e#2109#2110#0" expanded="true" />
                     <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
                     <element signature="method#addItemToList#0;class#SaleHandler#0" />
                   </folding>
@@ -140,7 +136,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="SaleHandler.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SaleHandler.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="323">
@@ -152,6 +148,47 @@
                     <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
                     <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
                     <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="44" column="40" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="40" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#Controller#0;class#Controller#0" />
+                    <element signature="docComment;method#startSale#0;class#Controller#0" />
+                    <element signature="e#714#715#0" expanded="true" />
+                    <element signature="e#804#805#0" expanded="true" />
+                    <element signature="docComment;method#enterItem#0;class#Controller#0" />
+                    <element signature="docComment;method#finishSale#0;class#Controller#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ExernalComController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Integration/ExernalComController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ItemDTO.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Integration/ItemDTO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
+                  <folding>
+                    <element signature="e#435#436#0" expanded="true" />
+                    <element signature="e#468#469#0" expanded="true" />
+                    <element signature="e#526#527#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -550,7 +587,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4195096" side_tool="true" visible="true" weight="0.26797387" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5804904" visible="true" weight="0.26797387" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5804904" weight="0.26797387" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4904051" weight="0.32897604" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -594,7 +631,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -628,7 +665,7 @@
             <element signature="method#Controller#0;class#Controller#0" />
             <element signature="docComment;method#startSale#0;class#Controller#0" />
             <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
             <element signature="docComment;method#enterItem#0;class#Controller#0" />
             <element signature="docComment;method#finishSale#0;class#Controller#0" />
           </folding>
@@ -662,11 +699,13 @@
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
             <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
             <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
             <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
+            <element signature="method#addItemToList#0;class#SaleHandler#0" />
           </folding>
         </state>
       </provider>
@@ -724,7 +763,7 @@
             <element signature="method#Controller#0;class#Controller#0" />
             <element signature="docComment;method#startSale#0;class#Controller#0" />
             <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
             <element signature="docComment;method#enterItem#0;class#Controller#0" />
             <element signature="docComment;method#finishSale#0;class#Controller#0" />
           </folding>
@@ -758,11 +797,13 @@
           <caret line="14" column="54" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
             <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
             <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
             <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
+            <element signature="method#addItemToList#0;class#SaleHandler#0" />
           </folding>
         </state>
       </provider>
@@ -813,7 +854,7 @@
             <element signature="method#Controller#0;class#Controller#0" />
             <element signature="docComment;method#startSale#0;class#Controller#0" />
             <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
             <element signature="docComment;method#enterItem#0;class#Controller#0" />
             <element signature="docComment;method#finishSale#0;class#Controller#0" />
           </folding>
@@ -860,11 +901,13 @@
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
             <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
             <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
             <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
+            <element signature="method#addItemToList#0;class#SaleHandler#0" />
           </folding>
         </state>
       </provider>
@@ -896,41 +939,6 @@
     <entry file="file://$PROJECT_DIR$/src/Integration/ExernalComControllerTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/Model/ModelTest/f.properties" />
     <entry file="file://$PROJECT_DIR$/Testfiles/Model/SaleHandlerTest.groovy" />
-    <entry file="file://$PROJECT_DIR$/src/Integration/ExernalComController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Integration/ItemDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Controller#0;class#Controller#0" />
-            <element signature="docComment;method#startSale#0;class#Controller#0" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="docComment;method#enterItem#0;class#Controller#0" />
-            <element signature="docComment;method#finishSale#0;class#Controller#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -971,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Receipt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -988,10 +989,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Integration/RegistryCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Controller#0;class#Controller#0" />
+            <element signature="docComment;method#startSale#0;class#Controller#0" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="docComment;method#enterItem#0;class#Controller#0" />
+            <element signature="docComment;method#finishSale#0;class#Controller#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Integration/Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Receipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Integration/ExernalComController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Integration/ItemDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,31 +1063,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Integration/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="491">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
             <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
             <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
             <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
             <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
+            <element signature="method#addItemToList#0;class#SaleHandler#0" />
           </folding>
         </state>
       </provider>

@@ -30,8 +30,8 @@ public class SaleHandler {
      */
     public SaleDTO addItemToSale(int itemID) {
         ItemDTO newItem = itemRegistry.getItem(itemID);
-        setNewTotalCost(newItem);
-        setNewTax(newItem);
+        setTotalCost(newItem);
+        setTax(newItem);
         addItemToList(newItem);
         this.saleDTO = new SaleDTO(this.itemDTO, this.totalCost, this.tax);
         return this.saleDTO;
@@ -66,11 +66,11 @@ public class SaleHandler {
     }
 
     /*Private Methods*/
-    private void setNewTotalCost(ItemDTO newItem) {
+    private void setTotalCost(ItemDTO newItem) {
         this.totalCost = this.totalCost + newItem.getTotalPrice();
     }
 
-    private void setNewTax(ItemDTO newItem) {
+    private void setTax(ItemDTO newItem) {
         this.tax = this.tax + newItem.getTax();
     }
 
