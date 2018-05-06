@@ -20,6 +20,7 @@ public class SaleHandler {
     public SaleHandler(RegistryCreator registryCreator) {
         this.itemRegistry = registryCreator.getItemRegistry();
         this.saleDTO = new SaleDTO();
+        this.itemDTO = new ItemDTO[0];
     }
 
     /**
@@ -82,13 +83,14 @@ public class SaleHandler {
      */
     private ItemDTO[] addItemToList(ItemDTO itemDTO) {
 
-        this.itemDTO = new ItemDTO[this.itemDTO.length + 1];
+        ItemDTO[] newItemDTOList = new ItemDTO[this.itemDTO.length + 1];
         int i;
-        for (i = 0; i < this.itemDTO.length - 1; i++) {
-            this.itemDTO[i] = this.itemDTO[i];
+        for (i = 0; i < newItemDTOList.length - 1; i++) {
+            newItemDTOList[i] = this.itemDTO[i];
         }
-        this.itemDTO[i] = itemDTO;
+        newItemDTOList[i] = itemDTO;
+        this.itemDTO = newItemDTOList;
         return this.itemDTO;
     }
-    
+
 }
