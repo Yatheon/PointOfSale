@@ -27,10 +27,9 @@ public class ItemRegistry {
      * @return the requested item
      */
     public ItemDTO getItem(int itemID) {
-        for(int i = 0; i < this.item.length; i++){
-            if(this.item[i].getId() == itemID )
+        for(int i = 0; i < this.item.length; i++)
+            if (this.item[i].getId() == itemID)
                 return this.item[i];
-        }
 
         return this.item[9];
     }

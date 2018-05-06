@@ -13,19 +13,17 @@ import static org.junit.jupiter.api.Assertions.*;
 class SaleHandlerTest extends Object {
     private RegistryCreator registryCreator;
     private SaleHandler saleHandler;
- 
+
     @BeforeEach
     void setUp() {
         registryCreator = new RegistryCreator();
         saleHandler = new SaleHandler(registryCreator.getItemRegistry());
-
     }
 
     @AfterEach
     void tearDown() {
         registryCreator = null;
         saleHandler = null;
-
     }
 
     @Test

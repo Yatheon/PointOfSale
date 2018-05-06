@@ -79,9 +79,8 @@ public class SaleHandler {
      * Adds a ItemDTO to the ItemDTO list
      *
      * @param itemDTO the item that is to be added to the list
-     * @return a updated itemDTO list with the added item
      */
-    private ItemDTO[] addItemToList(ItemDTO itemDTO) {
+    private void addItemToList(ItemDTO itemDTO) {
 
         ItemDTO[] newItemDTOList = new ItemDTO[this.itemDTO.length + 1];
         int i;
@@ -90,7 +89,6 @@ public class SaleHandler {
         }
         newItemDTOList[i] = itemDTO;
         this.itemDTO = newItemDTOList;
-        return this.itemDTO;
     }
 
 }
