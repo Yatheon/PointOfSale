@@ -29,7 +29,7 @@ public class SaleHandler {
      * @return a new SaleDTO that has the added item
      */
     public SaleDTO addItemToSale(int itemID) {
-        ItemDTO newItem = getItem(itemID);
+        ItemDTO newItem = itemRegistry.getItem(itemID);
         setNewTotalCost(newItem);
         setNewTax(newItem);
         addItemToList(newItem);
@@ -90,9 +90,5 @@ public class SaleHandler {
         this.itemDTO[i] = itemDTO;
         return this.itemDTO;
     }
-
-    private ItemDTO getItem(int itemID) {
-        return itemRegistry.getItem(itemID);
-    }
-
+    
 }
