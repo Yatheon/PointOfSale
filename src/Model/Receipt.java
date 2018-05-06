@@ -14,8 +14,7 @@ public class Receipt {
         ItemDTO[] itemDTO = saleDTO.getItemDTO();
         this.receipt = new String[itemDTO.length+3];
         int i = 0;
-        for(; i< itemDTO.length; i++)
-        {
+        for(; i< itemDTO.length; i++) {
             this.receipt[i] = itemDTO[i].getTotalPrice()+"  "+ itemDTO[i].getName();
         }
         this.receipt[i++] = "Total Cost: "+saleDTO.getTotalCost();

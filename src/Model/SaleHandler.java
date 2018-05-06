@@ -1,7 +1,6 @@
 package Model;
 
 import Integration.ItemRegistry;
-import Integration.RegistryCreator;
 import Integration.SaleDTO;
 import Integration.ItemDTO;
 
