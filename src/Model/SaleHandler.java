@@ -8,6 +8,7 @@ import Integration.ItemDTO;
 public class SaleHandler {
     private ItemRegistry itemRegistry;
     private SaleDTO saleDTO;
+    private ItemDTO[] itemDTO;
     private double totalCost;
     private double tax;
 
@@ -31,7 +32,8 @@ public class SaleHandler {
         ItemDTO newItem = getItem(itemID);
         setNewTotalCost(newItem);
         setNewTax(newItem);
-        this.saleDTO = new SaleDTO(addItemToList(newItem), this.totalCost, this.tax);
+        addItemToList(newItem);
+        this.saleDTO = new SaleDTO(this.itemDTO, this.totalCost, this.tax);
         return this.saleDTO;
     }
 
@@ -44,14 +46,16 @@ public class SaleHandler {
     public double calculateChange(double paymentAmount) {
         return (paymentAmount - this.totalCost);
     }
+
     /**
      * Get method for Salehandler to retrieve stored SaleDTO
      *
-     * @return Salehandler obejct own SaleDTO
+     * @return Salehandler object own SaleDTO
      */
     public SaleDTO getSaleDTO() {
         return saleDTO;
     }
+
     /**
      * Create receipt from Salehandlers stored SaleDTO
      *
@@ -78,13 +82,13 @@ public class SaleHandler {
      */
     private ItemDTO[] addItemToList(ItemDTO itemDTO) {
 
-        ItemDTO[] itemDTOList = new ItemDTO[saleDTO.getItemDTO().length + 1];
+        this.itemDTO = new ItemDTO[this.itemDTO.length + 1];
         int i;
-        for (i = 0; i < itemDTOList.length - 1; i++) {
-            itemDTOList[i] = saleDTO.getItemDTO()[i];
+        for (i = 0; i < this.itemDTO.length - 1; i++) {
+            this.itemDTO[i] = this.itemDTO[i];
         }
-        itemDTOList[i] = itemDTO;
-        return itemDTOList;
+        this.itemDTO[i] = itemDTO;
+        return this.itemDTO;
     }
 
     private ItemDTO getItem(int itemID) {

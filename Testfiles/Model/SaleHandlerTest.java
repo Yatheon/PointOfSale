@@ -35,7 +35,6 @@ class SaleHandlerTest extends Object {
         SaleDTO saleDTO = saleHandler.addItemToSale(testVariable);
         double result = saleDTO.getTotalCost();
         assertEquals(expResult,result);
-
     }
 
     @Test
@@ -45,6 +44,7 @@ class SaleHandlerTest extends Object {
         double result = saleHandler.calculateChange(testVariable);
         assertEquals(expResult,result);
     }
+
     @Test
     void testCalculateChangeOneItemList() {
         int itemID = 2;

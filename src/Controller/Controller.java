@@ -12,8 +12,7 @@ public class Controller {
     private Printer printer;
     private ExernalComController exernalComController;
 
-    public Controller(RegistryCreator registryCreator, Printer printer, ExernalComController exernalComController)
-    {
+    public Controller(RegistryCreator registryCreator, Printer printer, ExernalComController exernalComController) {
         this.registryCreator = registryCreator;
         this.printer = printer;
         this.exernalComController = exernalComController;
@@ -22,9 +21,8 @@ public class Controller {
     /**
      * Initiates the sale process
      */
-    public void startSale()
-    {
-                            this.saleHandler = new SaleHandler(this.registryCreator);
+    public void startSale() {
+        this.saleHandler = new SaleHandler(this.registryCreator);
     }
 
     /**
@@ -33,8 +31,7 @@ public class Controller {
      * @param itemID the ID of the scanned object that is to be sold
      * @return a updated saleDTO that has the added item
      */
-    public SaleDTO enterItem(int itemID)
-    {
+    public SaleDTO enterItem(int itemID) {
        return saleHandler.addItemToSale(itemID);
     }
 
@@ -44,8 +41,7 @@ public class Controller {
      * @param paymentAmount the amount that the costumer has payed
      * @return the change that the cashier is to give back to the costumer
      */
-    public double finishSale(double paymentAmount)
-    {
+    public double finishSale(double paymentAmount) {
         printer.printReceipt(saleHandler.createReceipt());
         exernalComController.sendSaleInformation(saleHandler.getSaleDTO());
         return saleHandler.calculateChange(paymentAmount);
