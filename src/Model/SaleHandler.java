@@ -15,10 +15,10 @@ public class SaleHandler {
     /**
      * Creates a new instance, a object that handles sale logic.
      *
-     * @param registryCreator object that is used to create registries
+     * @param itemRegistry object with all items
      */
-    public SaleHandler(RegistryCreator registryCreator) {
-        this.itemRegistry = registryCreator.getItemRegistry();
+    public SaleHandler(ItemRegistry itemRegistry) {
+        this.itemRegistry = itemRegistry;
         this.saleDTO = new SaleDTO();
         this.itemDTO = new ItemDTO[0];
     }

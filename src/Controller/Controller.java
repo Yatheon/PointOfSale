@@ -22,7 +22,7 @@ public class Controller {
      * Initiates the sale process
      */
     public void startSale() {
-        this.saleHandler = new SaleHandler(this.registryCreator);
+        this.saleHandler = new SaleHandler(this.registryCreator.getItemRegistry());
     }
 
     /**

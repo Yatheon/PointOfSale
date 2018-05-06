@@ -22,7 +22,7 @@ class ControllerTest {
         printer = new Printer();
         controller = new Controller(registryCreator,printer,externalComController);
         itemRegistry = new ItemRegistry();
-        saleHandler = new SaleHandler(registryCreator);
+        saleHandler = new SaleHandler(registryCreator.getItemRegistry());
         controller.startSale();
     }
 

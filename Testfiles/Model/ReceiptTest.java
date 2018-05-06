@@ -14,7 +14,7 @@ class ReceiptTest {
     @BeforeEach
     void setUp() {
         registryCreator = new RegistryCreator();
-        saleHandler = new SaleHandler(registryCreator);
+        saleHandler = new SaleHandler(registryCreator.getItemRegistry());
     }
 
     @AfterEach
