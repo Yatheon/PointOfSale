@@ -1,10 +1,10 @@
 package Controller;
 
-import Exeptions.DataBaseFailureExeption;
-import Exeptions.ErrorMessageHandler;
-import Exeptions.ItemNotFoundExeption;
-import Exeptions.LogHandler;
-import Integration.ExernalComController;
+import Exceptions.DataBaseFailureException;
+import Exceptions.ErrorMessageHandler;
+import Exceptions.ItemNotFoundException;
+import Exceptions.LogHandler;
+import Integration.ExternalComController;
 import Integration.Printer;
 import Integration.RegistryCreator;
 import Integration.SaleDTO;
@@ -14,14 +14,14 @@ public class Controller {
     private SaleHandler saleHandler;
     private RegistryCreator registryCreator;
     private Printer printer;
-    private ExernalComController exernalComController;
+    private ExternalComController externalComController;
     private ErrorMessageHandler errorMsgHandler = new ErrorMessageHandler();
     private LogHandler logHandler = new LogHandler();
 
-    public Controller(RegistryCreator registryCreator, Printer printer, ExernalComController exernalComController, ErrorMessageHandler errorMsgHandler, LogHandler logHandler) {
+    public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController exernalComController, ErrorMessageHandler errorMsgHandler, LogHandler logHandler) {
         this.registryCreator = registryCreator;
         this.printer = printer;
-        this.exernalComController = exernalComController;
+        this.externalComController = exernalComController;
         this.errorMsgHandler = errorMsgHandler;
         this.logHandler = logHandler;
     }
@@ -44,11 +44,11 @@ public class Controller {
         try {
             return saleHandler.addItemToSale(itemID);
         }
-        catch (ItemNotFoundExeption e){
+        catch (ItemNotFoundException e){
             logHandler.logExeption(e);
             errorMsgHandler.showErrorMsg(e);
         }
-        catch (DataBaseFailureExeption e){
+        catch (DataBaseFailureException e){
             logHandler.logExeption(e);
             errorMsgHandler.showErrorMsg(e);
         }
@@ -63,7 +63,7 @@ public class Controller {
      */
     public double finishSale(double paymentAmount) {
         printer.printReceipt(saleHandler.createReceipt());
-        exernalComController.sendSaleInformation(saleHandler.getSaleDTO());
+        externalComController.sendSaleInformation(saleHandler.getSaleDTO());
         return saleHandler.calculateChange(paymentAmount);
     }
 }

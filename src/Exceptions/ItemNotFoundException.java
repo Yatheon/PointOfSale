@@ -1,9 +1,9 @@
-package Exeptions;
+package Exceptions;
 /**
  * Thrown when the requested itemID does not match the itemIDs
  * in any of the items in the itemRegistry.
  */
-public class ItemNotFoundExeption extends Exception {
+public class ItemNotFoundException extends Exception {
     private int itemIDThatCanNotBeFound;
     /**
      * Creates a new instance representing the condition
@@ -11,7 +11,7 @@ public class ItemNotFoundExeption extends Exception {
      *
      * @param itemIDThatCanNotBeFound the id of the scanned item that was not found in the itemRegistry
      */
-    public ItemNotFoundExeption( int itemIDThatCanNotBeFound) {
+    public ItemNotFoundException( int itemIDThatCanNotBeFound) {
         this.itemIDThatCanNotBeFound = itemIDThatCanNotBeFound;
     }
     public String toString(){

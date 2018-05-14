@@ -1,4 +1,4 @@
-package Exeptions;
+package Exceptions;
 /**
  * Handles the Exception communication with the cashier, lets the cashier know
  * about what went wrong

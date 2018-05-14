@@ -1,7 +1,7 @@
 package Model;
 
-import Exeptions.DataBaseFailureExeption;
-import Exeptions.ItemNotFoundExeption;
+import Exceptions.DataBaseFailureException;
+import Exceptions.ItemNotFoundException;
 import Integration.ItemRegistry;
 import Integration.SaleDTO;
 import Integration.ItemDTO;
@@ -29,10 +29,10 @@ public class SaleHandler {
      *
      * @param itemID the id of the scanned item that is to be added to the sale
      * @return a new SaleDTO that has the added item
-     * @throws ItemNotFoundExeption if there is no item with the matching itemID
-     * @throws DataBaseFailureExeption if the database crashes unexpectedly
+     * @throws ItemNotFoundException if there is no item with the matching itemID
+     * @throws DataBaseFailureException if the database crashes unexpectedly
      */
-    public SaleDTO addItemToSale(int itemID) throws ItemNotFoundExeption, DataBaseFailureExeption {
+    public SaleDTO addItemToSale(int itemID) throws ItemNotFoundException, DataBaseFailureException {
         ItemDTO newItem = itemRegistry.getItem(itemID);
         setTotalCost(newItem);
         setTax(newItem);

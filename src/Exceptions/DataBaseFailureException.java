@@ -1,8 +1,8 @@
-package Exeptions;
+package Exceptions;
 /**
  * Thrown when something goes wrong internally with the database
  */
-public class DataBaseFailureExeption extends Exception {
+public class DataBaseFailureException extends Exception {
     private int itemIDThatCanNotBeFound;
     /**
      * Creates a new instance representing the condition
@@ -11,7 +11,7 @@ public class DataBaseFailureExeption extends Exception {
      * @param itemIDThatCanNotBeFound the id of the scanned item that caused the database failure when
      *                                searched for.
      */
-    public DataBaseFailureExeption( int itemIDThatCanNotBeFound) {
+    public DataBaseFailureException( int itemIDThatCanNotBeFound) {
         this.itemIDThatCanNotBeFound = itemIDThatCanNotBeFound;
     }
     public String toString(){

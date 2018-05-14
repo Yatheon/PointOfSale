@@ -1,8 +1,8 @@
 package Controller;
 
-import Exeptions.ErrorMessageHandler;
-import Exeptions.ItemNotFoundExeption;
-import Exeptions.LogHandler;
+import Exceptions.ErrorMessageHandler;
+import Exceptions.ItemNotFoundException;
+import Exceptions.LogHandler;
 import Integration.*;
 import Model.SaleHandler;
 import org.junit.jupiter.api.AfterEach;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ControllerTest {
     private RegistryCreator registryCreator;
     private Printer printer;
-    private ExernalComController externalComController;
+    private ExternalComController externalComController;
     private Controller controller;
     private ItemRegistry itemRegistry;
     private SaleHandler saleHandler;
@@ -23,7 +23,7 @@ class ControllerTest {
     @BeforeEach
     void setUp() {
         registryCreator = new RegistryCreator();
-        externalComController = new ExernalComController();
+        externalComController = new ExternalComController();
         printer = new Printer();
         errorMsgHandler = new ErrorMessageHandler();
         logHandler = new LogHandler();
