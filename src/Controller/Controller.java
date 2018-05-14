@@ -1,5 +1,9 @@
 package Controller;
 
+import Exeptions.DataBaseFailureExeption;
+import Exeptions.ErrorMessageHandler;
+import Exeptions.ItemNotFoundExeption;
+import Exeptions.LogHandler;
 import Integration.ExernalComController;
 import Integration.Printer;
 import Integration.RegistryCreator;
@@ -11,11 +15,15 @@ public class Controller {
     private RegistryCreator registryCreator;
     private Printer printer;
     private ExernalComController exernalComController;
+    private ErrorMessageHandler errorMsgHandler = new ErrorMessageHandler();
+    private LogHandler logHandler = new LogHandler();
 
-    public Controller(RegistryCreator registryCreator, Printer printer, ExernalComController exernalComController) {
+    public Controller(RegistryCreator registryCreator, Printer printer, ExernalComController exernalComController, ErrorMessageHandler errorMsgHandler, LogHandler logHandler) {
         this.registryCreator = registryCreator;
         this.printer = printer;
         this.exernalComController = exernalComController;
+        this.errorMsgHandler = errorMsgHandler;
+        this.logHandler = logHandler;
     }
 
     /**
@@ -30,9 +38,21 @@ public class Controller {
      *
      * @param itemID the ID of the scanned object that is to be sold
      * @return a updated saleDTO that has the added item
+     *
      */
-    public SaleDTO enterItem(int itemID) {
-       return saleHandler.addItemToSale(itemID);
+    public SaleDTO enterItem(int itemID){
+        try {
+            return saleHandler.addItemToSale(itemID);
+        }
+        catch (ItemNotFoundExeption e){
+            logHandler.logExeption(e);
+            errorMsgHandler.showErrorMsg(e);
+        }
+        catch (DataBaseFailureExeption e){
+            logHandler.logExeption(e);
+            errorMsgHandler.showErrorMsg(e);
+        }
+        return saleHandler.getSaleDTO();
     }
 
     /**

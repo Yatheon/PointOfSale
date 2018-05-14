@@ -30,7 +30,7 @@ class ReceiptTest {
         String result  = receiptString[0];
         assertEquals(expResult,result);
     }
-    @Test
+    /*@Test
     void testGetReceiptOneItem() {
         int itemID = 2;
         saleHandler.addItemToSale(itemID);
@@ -40,4 +40,6 @@ class ReceiptTest {
         String result  = receiptString[0];
         assertEquals(expResult,result);
     }
+    */
+
 }

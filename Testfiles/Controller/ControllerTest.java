@@ -1,5 +1,8 @@
 package Controller;
 
+import Exeptions.ErrorMessageHandler;
+import Exeptions.ItemNotFoundExeption;
+import Exeptions.LogHandler;
 import Integration.*;
 import Model.SaleHandler;
 import org.junit.jupiter.api.AfterEach;
@@ -15,12 +18,16 @@ class ControllerTest {
     private Controller controller;
     private ItemRegistry itemRegistry;
     private SaleHandler saleHandler;
+    private ErrorMessageHandler errorMsgHandler;
+    private LogHandler logHandler;
     @BeforeEach
     void setUp() {
         registryCreator = new RegistryCreator();
         externalComController = new ExernalComController();
         printer = new Printer();
-        controller = new Controller(registryCreator,printer,externalComController);
+        errorMsgHandler = new ErrorMessageHandler();
+        logHandler = new LogHandler();
+        controller = new Controller(registryCreator,printer,externalComController,errorMsgHandler,logHandler);
         itemRegistry = new ItemRegistry();
         saleHandler = new SaleHandler(registryCreator.getItemRegistry());
         controller.startSale();
@@ -41,7 +48,9 @@ class ControllerTest {
     void testEnterItem() {
         int testItemID = 2;
         SaleDTO result = controller.enterItem(testItemID);
-        ItemDTO[] itemList = {itemRegistry.getItem(2)};
+        ItemDTO[] itemList = {
+                new ItemDTO("testItem",10,4,0)
+        };
         SaleDTO expResult = new SaleDTO(itemList,10,4);
 
 

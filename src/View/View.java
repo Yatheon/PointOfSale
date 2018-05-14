@@ -16,9 +16,9 @@ public class View {
 
         controller.startSale();
         System.out.println("Enter choklad id");
-        saleDTO = controller.enterItem(3);
+        saleDTO = controller.enterItem(666);
         System.out.println("Enter bacon id");
-        saleDTO = controller.enterItem(2);
+        saleDTO = controller.enterItem(0);
         System.out.println("Total cost is: "+saleDTO.getTotalCost());
         System.out.println("Payment: 53");
 

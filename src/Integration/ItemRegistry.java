@@ -1,5 +1,8 @@
 package Integration;
 
+import Exeptions.DataBaseFailureExeption;
+import Exeptions.ItemNotFoundExeption;
+
 /**
  * Contains all the different items that are available
  */
@@ -25,12 +28,20 @@ public class ItemRegistry {
      *
      * @param itemID the ID of the item that is requested
      * @return the requested item
+     * @throws ItemNotFoundExeption if there is no item with the matching itemID
+     * @throws DataBaseFailureExeption if the database crashes unexpectedly
      */
-    public ItemDTO getItem(int itemID) {
+    public ItemDTO getItem(int itemID) throws ItemNotFoundExeption, DataBaseFailureExeption{
+        /*This if statement is a hardcoded database failure*/
+        if (itemID == 666){
+            throw new DataBaseFailureExeption(itemID);
+        }
+
         for(int i = 0; i < this.item.length; i++)
             if (this.item[i].getId() == itemID)
                 return this.item[i];
 
-        return this.item[9];
+        throw new ItemNotFoundExeption(itemID);
+
     }
 }
