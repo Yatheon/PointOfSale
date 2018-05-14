@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f9ff7b1-f43d-43d7-bb47-7c32ce0c5773" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Model/SaleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/SaleHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exeptions/ErrorMessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exeptions/LogHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +23,7 @@
             <entry file="file://$PROJECT_DIR$/src/Integration/Printer.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
-                  <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+                  <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -28,7 +31,7 @@
           <file leaf-file-name="ItemRegistry.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
+                <state relative-caret-position="510">
                   <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
                 </state>
               </provider>
@@ -37,8 +40,8 @@
           <file leaf-file-name="SaleHandlerTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Testfiles/Model/SaleHandlerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="613">
-                  <caret line="54" selection-start-line="54" selection-end-line="54" />
+                <state relative-caret-position="782">
+                  <caret line="52" selection-start-line="52" selection-end-line="52" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -49,8 +52,8 @@
           <file leaf-file-name="ReceiptTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Testfiles/Model/ReceiptTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="256">
-                  <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+                <state relative-caret-position="323">
+                  <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -61,8 +64,8 @@
           <file leaf-file-name="ControllerTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="613">
-                  <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+                <state relative-caret-position="901">
+                  <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -74,7 +77,7 @@
             <entry file="file://$PROJECT_DIR$/src/Model/Receipt.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+                  <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -104,18 +107,8 @@
           <file leaf-file-name="SaleHandler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="491">
-                  <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
-                    <element signature="method#addItemToList#0;class#SaleHandler#0" />
-                  </folding>
+                <state relative-caret-position="1360">
+                  <caret line="92" selection-start-line="92" selection-end-line="92" />
                 </state>
               </provider>
             </entry>
@@ -123,7 +116,7 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
+                <state relative-caret-position="170">
                   <caret line="14" selection-start-line="14" selection-end-line="14" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -135,19 +128,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="SaleHandler.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="323">
-                  <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+                  <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
-                    <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
                   </folding>
                 </state>
               </provider>
@@ -156,16 +144,10 @@
           <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="44" column="40" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="40" />
+                <state relative-caret-position="629">
+                  <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#Controller#0;class#Controller#0" />
-                    <element signature="docComment;method#startSale#0;class#Controller#0" />
-                    <element signature="e#714#715#0" expanded="true" />
-                    <element signature="e#804#805#0" expanded="true" />
-                    <element signature="docComment;method#enterItem#0;class#Controller#0" />
-                    <element signature="docComment;method#finishSale#0;class#Controller#0" />
                   </folding>
                 </state>
               </provider>
@@ -180,7 +162,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ItemDTO.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ItemDTO.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Integration/ItemDTO.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="391">
@@ -194,6 +176,27 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="ErrorMessageHandler.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Exeptions/ErrorMessageHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LogHandler.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Exeptions/LogHandler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="205">
+                  <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -201,8 +204,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -230,22 +233,24 @@
         <option value="$PROJECT_DIR$/src/Model/Receipt.java" />
         <option value="$PROJECT_DIR$/src/Integration/Printer.java" />
         <option value="$PROJECT_DIR$/src/Model/SaleHandler.java" />
+        <option value="$PROJECT_DIR$/src/Exeptions/LogHandler.java" />
+        <option value="$PROJECT_DIR$/src/Exeptions/ErrorMessageHandler.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2355" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1039" />
-    <option name="height" value="608" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,54 +267,13 @@
               <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
               <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Integration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
-              <item name="Testfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
-              <item name="Testfiles" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
-              <item name="Testfiles" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Exeptions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -575,55 +539,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49253732" weight="0.3267974" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4195096" side_tool="true" visible="true" weight="0.26797387" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41577825" side_tool="true" visible="true" weight="0.1350906" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5804904" weight="0.26797387" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4904051" weight="0.32897604" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16684435" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.24962178" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49253732" weight="0.39760348" />
-      <window_info anchor="right" id="Palette" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.24962178" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5842217" visible="true" weight="0.13616557" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.494705" weight="0.39868203" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5842217" weight="0.13616557" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4914712" weight="0.32934782" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.41577825" side_tool="true" visible="true" weight="0.13616557" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49319214" weight="0.32784185" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12783661" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.24962178" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.494705" weight="0.39868203" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32979852" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49319214" weight="0.32784185" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -639,35 +583,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Integration/RegistryCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Controller#0;class#Controller#0" />
-            <element signature="docComment;method#startSale#0;class#Controller#0" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="docComment;method#enterItem#0;class#Controller#0" />
-            <element signature="docComment;method#finishSale#0;class#Controller#0" />
           </folding>
         </state>
       </provider>
@@ -699,13 +620,6 @@
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
-            <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
-            <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
-            <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
-            <element signature="method#addItemToList#0;class#SaleHandler#0" />
           </folding>
         </state>
       </provider>
@@ -760,12 +674,6 @@
           <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Controller#0;class#Controller#0" />
-            <element signature="docComment;method#startSale#0;class#Controller#0" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="docComment;method#enterItem#0;class#Controller#0" />
-            <element signature="docComment;method#finishSale#0;class#Controller#0" />
           </folding>
         </state>
       </provider>
@@ -797,13 +705,6 @@
           <caret line="14" column="54" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
-            <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
-            <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
-            <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
-            <element signature="method#addItemToList#0;class#SaleHandler#0" />
           </folding>
         </state>
       </provider>
@@ -851,12 +752,6 @@
         <state>
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Controller#0;class#Controller#0" />
-            <element signature="docComment;method#startSale#0;class#Controller#0" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="docComment;method#enterItem#0;class#Controller#0" />
-            <element signature="docComment;method#finishSale#0;class#Controller#0" />
           </folding>
         </state>
       </provider>
@@ -901,13 +796,6 @@
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
-            <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
-            <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
-            <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
-            <element signature="method#addItemToList#0;class#SaleHandler#0" />
           </folding>
         </state>
       </provider>
@@ -951,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Testfiles/Model/SaleHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="782">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -961,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Testfiles/Model/ReceiptTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="323">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -971,8 +859,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        <state relative-caret-position="901">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -981,7 +869,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="170">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -991,7 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="510">
           <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
         </state>
       </provider>
@@ -1005,16 +893,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="40" />
+        <state relative-caret-position="629">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Controller#0;class#Controller#0" />
-            <element signature="docComment;method#startSale#0;class#Controller#0" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="docComment;method#enterItem#0;class#Controller#0" />
-            <element signature="docComment;method#finishSale#0;class#Controller#0" />
           </folding>
         </state>
       </provider>
@@ -1022,14 +904,14 @@
     <entry file="file://$PROJECT_DIR$/src/Integration/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1065,17 +947,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="323">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#SaleHandler#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToSale#0;class#SaleHandler#0" />
-            <element signature="docComment;method#calculateChange#0;class#SaleHandler#0" />
-            <element signature="docComment;method#getSaleDTO#0;class#SaleHandler#0" />
-            <element signature="docComment;method#createReceipt#0;class#SaleHandler#0" />
-            <element signature="docComment;method#addItemToList#0;class#SaleHandler#0" />
-            <element signature="method#addItemToList#0;class#SaleHandler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exeptions/ErrorMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exeptions/LogHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
