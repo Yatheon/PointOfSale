@@ -52,6 +52,11 @@ public class Controller {
         externalComController.sendSaleInformation(saleHandler.getSaleDTO());
         return saleHandler.calculateChange(paymentAmount);
     }
+    /**
+     * Tells the saleHandler to add a observer
+     *
+     * @param observer the object that is to observe SaleHandler
+     */
     public void addSaleHandlerObserver(Observer observer){
         saleHandler.addObserver(observer);
     }
