@@ -1,13 +1,12 @@
 package Controller;
 
-import Exceptions.DataBaseFailureException;
-import Exceptions.ErrorMessageHandler;
-import Exceptions.ItemNotFoundException;
-import Exceptions.LogHandler;
+import Integration.DataBaseFailureException;
+import Integration.ItemNotFoundException;
 import Integration.ExternalComController;
 import Integration.Printer;
 import Integration.RegistryCreator;
 import Integration.SaleDTO;
+import Model.Observer;
 import Model.SaleHandler;
 
 public class Controller {
@@ -15,15 +14,13 @@ public class Controller {
     private RegistryCreator registryCreator;
     private Printer printer;
     private ExternalComController externalComController;
-    private ErrorMessageHandler errorMsgHandler = new ErrorMessageHandler();
-    private LogHandler logHandler = new LogHandler();
 
-    public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController exernalComController, ErrorMessageHandler errorMsgHandler, LogHandler logHandler) {
+
+    public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController exernalComController) {
         this.registryCreator = registryCreator;
         this.printer = printer;
         this.externalComController = exernalComController;
-        this.errorMsgHandler = errorMsgHandler;
-        this.logHandler = logHandler;
+
     }
 
     /**
@@ -40,19 +37,8 @@ public class Controller {
      * @return a updated saleDTO that has the added item
      *
      */
-    public SaleDTO enterItem(int itemID){
-        try {
+    public SaleDTO enterItem(int itemID)throws ItemNotFoundException, DataBaseFailureException{
             return saleHandler.addItemToSale(itemID);
-        }
-        catch (ItemNotFoundException e){
-            logHandler.logExeption(e);
-            errorMsgHandler.showErrorMsg(e);
-        }
-        catch (DataBaseFailureException e){
-            logHandler.logExeption(e);
-            errorMsgHandler.showErrorMsg(e);
-        }
-        return saleHandler.getSaleDTO();
     }
 
     /**
@@ -65,5 +51,8 @@ public class Controller {
         printer.printReceipt(saleHandler.createReceipt());
         externalComController.sendSaleInformation(saleHandler.getSaleDTO());
         return saleHandler.calculateChange(paymentAmount);
+    }
+    public void addSaleHandlerObserver(Observer observer){
+        saleHandler.addObserver(observer);
     }
 }

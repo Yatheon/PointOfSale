@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f9ff7b1-f43d-43d7-bb47-7c32ce0c5773" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Model/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/TotalRevenueView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/DataBaseFailureException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Integration/DataBaseFailureException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/ErrorMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exception/ErrorMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/ItemNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Integration/ItemNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/LogHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exception/LogHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Integration/ItemRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Integration/ItemRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/SaleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/SaleHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/View.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,10 +30,12 @@
       <file leaf-file-name="SaleHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-382">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="1215">
+              <caret line="109" column="75" selection-start-line="109" selection-start-column="75" selection-end-line="109" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3042#3043#0" expanded="true" />
+                <element signature="e#3069#3070#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,68 +44,66 @@
       <file leaf-file-name="ItemRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="680">
+              <caret line="40" column="80" lean-forward="true" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TotalRevenueView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/TotalRevenueView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ErrorMessageHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exceptions/ErrorMessageHandler.java">
+      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="34">
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LogHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Exceptions/LogHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/Exception/LogHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="340">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorMessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Exception/ErrorMessageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ItemNotFoundException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exceptions/ItemNotFoundException.java">
+        <entry file="file://$PROJECT_DIR$/src/Integration/ItemNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DataBaseFailureException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exceptions/DataBaseFailureException.java">
+        <entry file="file://$PROJECT_DIR$/src/Integration/DataBaseFailureException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Printer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Integration/Printer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="153">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -99,8 +111,8 @@
       <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="-1063">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,8 +123,13 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="748">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1930#1931#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,12 +169,19 @@
         <option value="$PROJECT_DIR$/src/Exceptions/ErrorMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/Exceptions/LogHandler.java" />
         <option value="$PROJECT_DIR$/src/Exceptions/ItemNotFoundExeption.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/Exceptions/ItemNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/Main/Main.java" />
-        <option value="$PROJECT_DIR$/src/Model/SaleHandler.java" />
         <option value="$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java" />
         <option value="$PROJECT_DIR$/src/View/View.java" />
+        <option value="$PROJECT_DIR$/src/Integration/DataBaseFailureException.java" />
+        <option value="$PROJECT_DIR$/src/Integration/ItemNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/Exception/LogHandler.java" />
+        <option value="$PROJECT_DIR$/src/Exception/ErrorMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/Integration/ItemRegistry.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/Model/SaleHandler.java" />
+        <option value="$PROJECT_DIR$/src/Model/Observer.java" />
+        <option value="$PROJECT_DIR$/src/View/TotalRevenueView.java" />
       </list>
     </option>
   </component>
@@ -172,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,7 +218,7 @@
               <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
               <item name="PointOfSale" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="Exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PointOfSale" type="b2602c69:ProjectViewProjectNode" />
@@ -242,8 +265,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -496,29 +520,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48987207" weight="0.3267974" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4871407" weight="0.3261944" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4173774" side_tool="true" visible="true" weight="0.3769063" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.42057487" side_tool="true" visible="true" weight="0.3756178" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5826226" weight="0.3769063" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5794251" visible="true" weight="0.3756178" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4914712" weight="0.32934782" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13161875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.24962178" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.494705" weight="0.39868203" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49394855" weight="0.3970346" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -613,9 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Integration/SaleDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -681,13 +702,6 @@
     <entry file="file://$PROJECT_DIR$/src/Integration/ExernalComControllerTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/Model/ModelTest/f.properties" />
     <entry file="file://$PROJECT_DIR$/Testfiles/Model/SaleHandlerTest.groovy" />
-    <entry file="file://$PROJECT_DIR$/src/Model/Receipt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testfiles/Model/ReceiptTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -698,21 +712,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testfiles/Model/SaleHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Exeptions/LogHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/Exeptions/ItemNotFoundExeption.java" />
-    <entry file="file://$PROJECT_DIR$/PointOfSale.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Integration/ExernalComController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -760,74 +761,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/DataBaseFailureExeption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/ItemNotFoundExeption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Integration/ExternalComController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-382">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exceptions/DataBaseFailureExeption.java" />
+    <entry file="file://$PROJECT_DIR$/src/Exceptions/ItemNotFoundExeption.java" />
+    <entry file="file://$PROJECT_DIR$/src/Integration/ExternalComController.java" />
     <entry file="file://$PROJECT_DIR$/src/Integration/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -835,41 +771,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="255">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testfiles/Controller/ControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/DataBaseFailureException.java">
+    <entry file="file://$PROJECT_DIR$/Testfiles/Model/SaleHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Integration/DataBaseFailureException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Integration/ItemRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="80" lean-forward="true" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exception/ErrorMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Integration/ItemNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/SaleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="109" column="75" selection-start-line="109" selection-start-column="75" selection-end-line="109" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3042#3043#0" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1063">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/TotalRevenueView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/ErrorMessageHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/Exception/LogHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/ItemNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exceptions/LogHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="340">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>

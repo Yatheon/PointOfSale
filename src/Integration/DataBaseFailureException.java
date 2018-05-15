@@ -1,9 +1,10 @@
-package Exceptions;
+package Integration;
 /**
  * Thrown when something goes wrong internally with the database
  */
 public class DataBaseFailureException extends Exception {
     private int itemIDThatCanNotBeFound;
+    private String msg;
     /**
      * Creates a new instance representing the condition
      * described in the specified message.
@@ -11,13 +12,12 @@ public class DataBaseFailureException extends Exception {
      * @param itemIDThatCanNotBeFound the id of the scanned item that caused the database failure when
      *                                searched for.
      */
-    public DataBaseFailureException( int itemIDThatCanNotBeFound) {
+    public DataBaseFailureException(String msg, int itemIDThatCanNotBeFound) {
+        super(msg);
+        this.msg = msg;
         this.itemIDThatCanNotBeFound = itemIDThatCanNotBeFound;
     }
-    public String toString(){
-        return "Something went wrong when searching for this item: "+this.itemIDThatCanNotBeFound+
-                "\nPlease notify a administrator about this.";
-    }
+
     public int getitemIDThatCanNotBeFound() {
         return this.itemIDThatCanNotBeFound;
     }

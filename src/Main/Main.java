@@ -1,7 +1,7 @@
 package Main;
 
-import Exceptions.ErrorMessageHandler;
-import Exceptions.LogHandler;
+import Exception.ErrorMessageHandler;
+import Exception.LogHandler;
 import Integration.RegistryCreator;
 import Integration.Printer;
 import Integration.ExternalComController;
@@ -15,7 +15,7 @@ public class Main {
         ExternalComController exernalComController = new ExternalComController();
         ErrorMessageHandler errorMsgHandler = new ErrorMessageHandler();
         LogHandler logHandler = new LogHandler();
-        Controller controller = new Controller(registryCreator,printer,exernalComController, errorMsgHandler, logHandler);
-        new View(controller).sampleExecution();
+        Controller controller = new Controller(registryCreator,printer,exernalComController);
+        new View(controller,errorMsgHandler, logHandler).sampleExecution();
     }
 }

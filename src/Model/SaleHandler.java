@@ -1,10 +1,13 @@
 package Model;
 
-import Exceptions.DataBaseFailureException;
-import Exceptions.ItemNotFoundException;
+import Integration.DataBaseFailureException;
+import Integration.ItemNotFoundException;
 import Integration.ItemRegistry;
 import Integration.SaleDTO;
 import Integration.ItemDTO;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class SaleHandler {
     private ItemRegistry itemRegistry;
@@ -12,6 +15,7 @@ public class SaleHandler {
     private ItemDTO[] itemDTO;
     private double totalCost;
     private double tax;
+    List<Observer> observerList = new ArrayList<>();
 
     /**
      * Creates a new instance, a object that handles sale logic.
@@ -48,6 +52,8 @@ public class SaleHandler {
      * @return change calculated from payment amount and running total
      */
     public double calculateChange(double paymentAmount) {
+
+        notifyObservers();
         return (paymentAmount - this.totalCost);
     }
 
@@ -65,8 +71,7 @@ public class SaleHandler {
      *
      * @return receipt object
      */
-    public Receipt createReceipt() {
-        return new Receipt(this.saleDTO);
+    public Receipt createReceipt() { return new Receipt(this.saleDTO);
     }
 
     /*Private Methods*/
@@ -92,6 +97,24 @@ public class SaleHandler {
         }
         newItemDTOList[i] = itemDTO;
         this.itemDTO = newItemDTOList;
+    }
+    /**
+     * Adds a Observer to this object
+     *
+     * @param observer the object that is to observe SaleHandler
+     */
+    public void addObserver(Observer observer){
+        observerList.add(observer);
+    }
+    /**
+     * Notifies all the observers in the observerList when a sale has ended
+     *
+     *
+     */
+    private void notifyObservers(){
+        for(Observer observer : observerList){
+            observer.updateObserver(totalCost);
+        }
     }
 
 }
