@@ -14,8 +14,7 @@ public class SaleHandler {
     private ItemDTO[] itemDTO;
     private double totalCost;
     private double tax;
-
-    List<Observer> observerList = new ArrayList<>();
+    private List<Observer> observerList = new ArrayList<>();
 
     /**
      * Creates a new instance, a object that handles sale logic.
