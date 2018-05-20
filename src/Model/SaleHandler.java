@@ -5,7 +5,6 @@ import Integration.ItemNotFoundException;
 import Integration.ItemRegistry;
 import Integration.SaleDTO;
 import Integration.ItemDTO;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -102,10 +101,10 @@ public class SaleHandler {
     /**
      * Adds a Observer to this object
      *
-     * @param observer the object that is to observe SaleHandler
+     * @param observer List of observers to observe.
      */
-    public void addObserver(Observer observer){
-        observerList.add(observer);
+    public void addObservers(List<Observer> observer){
+        this.observerList = observer;
     }
     /**
      * Notifies all the observers in the observerList when a sale has ended

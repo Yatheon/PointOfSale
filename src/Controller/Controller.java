@@ -9,6 +9,8 @@ import Integration.SaleDTO;
 import Model.Observer;
 import Model.SaleHandler;
 import Exception.LogHandler;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Controller {
     private SaleHandler saleHandler;
@@ -16,6 +18,7 @@ public class Controller {
     private Printer printer;
     private ExternalComController externalComController;
     private LogHandler logHandler;
+    private List<Observer> observerList = new ArrayList<>();
 
     public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController externalComController, LogHandler logHandler) {
         this.registryCreator = registryCreator;
@@ -30,6 +33,7 @@ public class Controller {
      */
     public void startSale() {
         this.saleHandler = new SaleHandler(this.registryCreator.getItemRegistry());
+        saleHandler.addObservers(observerList);
     }
 
     /**
@@ -37,6 +41,7 @@ public class Controller {
      *
      * @param itemID the ID of the scanned object that is to be sold
      * @return a updated saleDTO that has the added item
+     * @throws ItemNotFoundException if DataBaseFailureException occurs throws this exception
      *
      */
     public SaleDTO enterItem(int itemID)throws ItemNotFoundException{
@@ -61,11 +66,12 @@ public class Controller {
         return saleHandler.calculateChange(paymentAmount);
     }
     /**
-     * Tells the saleHandler to add a observer
+     * Adds observer to list
      *
-     * @param observer the object that is to observe SaleHandler
+     * @param observer the observer object
      */
-    public void addSaleHandlerObserver(Observer observer){
-        saleHandler.addObserver(observer);
+    public void addObserver(Observer observer){
+        observerList.add(observer);
     }
+
 }

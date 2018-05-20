@@ -15,6 +15,7 @@ public class View {
 
     public View(Controller controller, ErrorMessageHandler errorMsgHandler, LogHandler logHandler){
         this.controller = controller;
+        controller.addObserver(new TotalRevenueView());
         this.errorMsgHandler = errorMsgHandler;
         this.logHandler = logHandler;
     }
@@ -22,8 +23,6 @@ public class View {
 
 
         controller.startSale();
-        TotalRevenueView totalRevenueView = new TotalRevenueView();
-        controller.addSaleHandlerObserver(totalRevenueView);
         System.out.println("----------Session one------------\n");
         System.out.println("Enter choklad id");
         try {
@@ -55,7 +54,6 @@ public class View {
         /*---------Next session----------*/
         System.out.println("----------Session two------------\n");
         controller.startSale();
-        controller.addSaleHandlerObserver(totalRevenueView);
         System.out.println("Enter choklad id");
         try {
             saleDTO = controller.enterItem(666);
