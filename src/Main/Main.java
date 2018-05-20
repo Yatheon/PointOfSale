@@ -15,7 +15,7 @@ public class Main {
         ExternalComController exernalComController = new ExternalComController();
         ErrorMessageHandler errorMsgHandler = new ErrorMessageHandler();
         LogHandler logHandler = new LogHandler();
-        Controller controller = new Controller(registryCreator,printer,exernalComController);
+        Controller controller = new Controller(registryCreator,printer,exernalComController, logHandler);
         new View(controller,errorMsgHandler, logHandler).sampleExecution();
     }
 }

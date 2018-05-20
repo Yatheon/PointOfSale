@@ -1,4 +1,5 @@
 package View;
+import Integration.SaleDTO;
 import Model.Observer;
 
 /**
@@ -13,11 +14,11 @@ public class TotalRevenueView implements Observer {
     /**
      * Is called from saleHandler when a sale has ended.
      *
-     * @param totalAmount the total amount of cash that the customer has to pay to the cashier
+     * @param saleDTO SaleDTO of finished sale
      */
     @Override
-    public void updateObserver(double totalAmount){
-        this.totalAmount += totalAmount;
+    public void updateObserver(SaleDTO saleDTO){
+        this.totalAmount += saleDTO.getTotalCost();
         printTotalAmount(this.totalAmount);
     }
     private void printTotalAmount(double totalAmount){

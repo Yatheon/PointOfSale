@@ -27,7 +27,7 @@ class ControllerTest {
         printer = new Printer();
         errorMsgHandler = new ErrorMessageHandler();
         logHandler = new LogHandler();
-        controller = new Controller(registryCreator, printer, externalComController);
+        controller = new Controller(registryCreator, printer, externalComController, logHandler);
         itemRegistry = new ItemRegistry();
         saleHandler = new SaleHandler(registryCreator.getItemRegistry());
         controller.startSale();

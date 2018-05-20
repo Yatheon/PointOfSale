@@ -8,18 +8,20 @@ import Integration.RegistryCreator;
 import Integration.SaleDTO;
 import Model.Observer;
 import Model.SaleHandler;
+import Exception.LogHandler;
 
 public class Controller {
     private SaleHandler saleHandler;
     private RegistryCreator registryCreator;
     private Printer printer;
     private ExternalComController externalComController;
+    private LogHandler logHandler;
 
-
-    public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController externalComController) {
+    public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController externalComController, LogHandler logHandler) {
         this.registryCreator = registryCreator;
         this.printer = printer;
         this.externalComController = externalComController;
+        this.logHandler = logHandler;
 
     }
 
@@ -37,9 +39,15 @@ public class Controller {
      * @return a updated saleDTO that has the added item
      *
      */
-    public SaleDTO enterItem(int itemID)throws ItemNotFoundException, DataBaseFailureException{
+    public SaleDTO enterItem(int itemID)throws ItemNotFoundException{
+        try {
             return saleHandler.addItemToSale(itemID);
-    }
+        } catch (DataBaseFailureException e){
+            logHandler.logExeption(e);
+            throw new ItemNotFoundException("The item with the ID: '"+ itemID+"' could not be found." , itemID);
+            }
+        }
+
 
     /**
      * Ends the current sale and notifies the cashier of the change that is to be given to the costumer.

@@ -114,7 +114,7 @@ public class SaleHandler {
      */
     private void notifyObservers(){
         for(Observer observer : observerList){
-            observer.updateObserver(totalCost);
+            observer.updateObserver(saleDTO);
         }
     }
 

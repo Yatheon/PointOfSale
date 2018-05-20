@@ -30,13 +30,9 @@ public class View {
             saleDTO = controller.enterItem(632);
         }
         catch (ItemNotFoundException e){
-            logHandler.logExeption(e);
             errorMsgHandler.showErrorMsg(e);
         }
-        catch (DataBaseFailureException e){
-            logHandler.logExeption(e);
-            errorMsgHandler.showErrorMsg(e);
-        }
+
 
 
         System.out.println("Enter bacon id");
@@ -44,13 +40,9 @@ public class View {
             saleDTO = controller.enterItem(2);
         }
         catch (ItemNotFoundException e){
-            logHandler.logExeption(e);
             errorMsgHandler.showErrorMsg(e);
         }
-        catch (DataBaseFailureException e){
-            logHandler.logExeption(e);
-            errorMsgHandler.showErrorMsg(e);
-        }
+
         System.out.println("Total cost is: "+saleDTO.getTotalCost());
         System.out.println("Payment: 53");
 
@@ -69,27 +61,17 @@ public class View {
             saleDTO = controller.enterItem(666);
         }
         catch (ItemNotFoundException e){
-            logHandler.logExeption(e);
             errorMsgHandler.showErrorMsg(e);
         }
-        catch (DataBaseFailureException e){
-            logHandler.logExeption(e);
-            errorMsgHandler.showErrorMsg(e);
-        }
-
 
         System.out.println("Enter bacon id");
         try {
             saleDTO = controller.enterItem(2);
         }
         catch (ItemNotFoundException e){
-            logHandler.logExeption(e);
             errorMsgHandler.showErrorMsg(e);
         }
-        catch (DataBaseFailureException e){
-            logHandler.logExeption(e);
-            errorMsgHandler.showErrorMsg(e);
-        }
+
         System.out.println("Total cost is: "+saleDTO.getTotalCost());
         System.out.println("Payment: 53");
 
