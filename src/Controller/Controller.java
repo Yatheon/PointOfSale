@@ -16,10 +16,10 @@ public class Controller {
     private ExternalComController externalComController;
 
 
-    public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController exernalComController) {
+    public Controller(RegistryCreator registryCreator, Printer printer, ExternalComController externalComController) {
         this.registryCreator = registryCreator;
         this.printer = printer;
-        this.externalComController = exernalComController;
+        this.externalComController = externalComController;
 
     }
 

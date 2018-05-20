@@ -24,6 +24,7 @@ public class View {
         controller.startSale();
         TotalRevenueView totalRevenueView = new TotalRevenueView();
         controller.addSaleHandlerObserver(totalRevenueView);
+        System.out.println("----------Session one------------\n");
         System.out.println("Enter choklad id");
         try {
             saleDTO = controller.enterItem(632);
@@ -55,14 +56,17 @@ public class View {
 
         change = controller.finishSale(53);
         System.out.println("Change: "+change);
+        System.out.println("----------------------\n");
 
+        /*----------------*/
 
-        /*Next iterration*/
+        /*---------Next session----------*/
+        System.out.println("----------Session two------------\n");
         controller.startSale();
         controller.addSaleHandlerObserver(totalRevenueView);
         System.out.println("Enter choklad id");
         try {
-            saleDTO = controller.enterItem(632);
+            saleDTO = controller.enterItem(666);
         }
         catch (ItemNotFoundException e){
             logHandler.logExeption(e);
@@ -91,6 +95,7 @@ public class View {
 
         change = controller.finishSale(53);
         System.out.println("Change: "+change);
+        System.out.println("----------------------\n");
 
 
 

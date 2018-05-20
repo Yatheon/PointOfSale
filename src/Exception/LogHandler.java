@@ -18,7 +18,7 @@ public class LogHandler {
     public void logExeption(Exception exception){
         StringBuilder logMsgBuilder = new StringBuilder();
         logMsgBuilder.append("**This message is intended for log**\n");
-        logMsgBuilder.append(createTime());
+        logMsgBuilder.append(createTime()+"\n");
         logMsgBuilder.append(", Exception was thrown: ");
         logMsgBuilder.append(exception);
         logMsgBuilder.append("\n**End of log message**\n");

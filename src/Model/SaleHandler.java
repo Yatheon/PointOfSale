@@ -15,6 +15,7 @@ public class SaleHandler {
     private ItemDTO[] itemDTO;
     private double totalCost;
     private double tax;
+
     List<Observer> observerList = new ArrayList<>();
 
     /**

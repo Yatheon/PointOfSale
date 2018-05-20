@@ -31,14 +31,15 @@ public class ItemRegistry {
     public ItemDTO getItem(int itemID) throws ItemNotFoundException, DataBaseFailureException {
         /*This if statement is a hardcoded database failure*/
         if (itemID == 666){
-            throw new DataBaseFailureException("The database crashed, please contact your administrator.\nitemID that caused the crash: "+itemID,itemID);
+            throw new DataBaseFailureException("Something went wrong when searching for that item.\nitemID: "+itemID+
+                    "\nPlease try",itemID);
         }
 
         for(int i = 0; i < this.item.length; i++)
             if (this.item[i].getId() == itemID)
                 return this.item[i];
 
-        throw new ItemNotFoundException("The item with the ID that was inputted (ID: "+itemID+") was not found in the item registry",itemID);
+        throw new ItemNotFoundException("The item with the ID: '"+itemID+"' could not be found.",itemID);
 
     }
 }
